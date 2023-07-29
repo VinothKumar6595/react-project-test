@@ -1,0 +1,25 @@
+.table {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(131, 233, 30);
+}
+
+.table label {
+  font-weight: bold;
+}
+
+.table input {
+  font-weight: bold;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.table button {
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 2px;
+}
