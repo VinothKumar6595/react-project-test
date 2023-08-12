@@ -5,16 +5,16 @@ import TableList from "./components/TableList/TableList";
 
 function App() {
   const [enteredOrder, setEnteredOrder] = useState([]);
+
   const addingOrderHandler = (orders) => {
-    const myOrder = JSON.parse(orders);
     setEnteredOrder((prevOrder) => {
-      return [...prevOrder, myOrder];
+      return [...prevOrder, orders];
     });
   };
   return (
     <div className="App">
       <TableForm onAddOrder={addingOrderHandler} />
-      <TableList orders={enteredOrder} />
+      <TableList orders={enteredOrder} setOrders={setEnteredOrder} />
     </div>
   );
 }
